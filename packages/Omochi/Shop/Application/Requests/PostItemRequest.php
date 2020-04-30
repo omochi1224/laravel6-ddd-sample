@@ -21,9 +21,9 @@ class PostItemRequest extends Request
     {
         //バリデーションルール
         return [
-            'name' => 'required|string',
-            'price' => 'required|int',
-            'stock' => 'required|int',
+            'name' => 'required|string|min:0',
+            'price' => 'required|int|min:0',
+            'stock' => 'required|int|min:0',
         ];
     }
 }
