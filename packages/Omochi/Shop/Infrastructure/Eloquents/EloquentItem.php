@@ -6,7 +6,7 @@
  * Time: 02:32
  */
 
-namespace Omochi\Shop\Domain\Infrastructure\Eloquents;
+namespace Omochi\Shop\Infrastructure\Eloquents;
 
 
 use Omochi\Shop\Domain\Models\Domainable;

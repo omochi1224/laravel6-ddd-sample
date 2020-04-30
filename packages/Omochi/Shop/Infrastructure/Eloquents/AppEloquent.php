@@ -6,7 +6,7 @@
  * Time: 02:31
  */
 
-namespace Omochi\Shop\Domain\Infrastructure\Eloquents;
+namespace Omochi\Shop\Infrastructure\Eloquents;
 
 
 use Illuminate\Database\Eloquent\Model;

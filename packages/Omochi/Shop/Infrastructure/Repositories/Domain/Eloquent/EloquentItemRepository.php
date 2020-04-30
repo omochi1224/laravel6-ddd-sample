@@ -8,15 +8,15 @@
 
 declare(strict_types=1);
 
-namespace Omochi\Shop\Domain\Infrastructure\Repositories\Domain\Eloquent;
+namespace Omochi\Shop\Infrastructure\Repositories\Domain\Eloquent;
 
 
 use Omochi\Shop\Domain\Exceptions\NotFoundException;
-use Omochi\Shop\Domain\Infrastructure\Eloquents\EloquentItem;
 use Omochi\Shop\Domain\Models\Item\Item;
 use Omochi\Shop\Domain\Models\Item\ItemId;
 use Omochi\Shop\Domain\Models\Item\ItemRepository;
 use Omochi\Shop\Domain\Models\Item\Items;
+use Omochi\Shop\Infrastructure\Eloquents\EloquentItem;
 
 /**
  * Class EloquentItemRepository

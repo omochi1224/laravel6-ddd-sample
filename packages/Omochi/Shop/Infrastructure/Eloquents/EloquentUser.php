@@ -6,7 +6,7 @@
  * Time: 18:10
  */
 
-namespace Omochi\Shop\Domain\Infrastructure\Eloquents;
+namespace Omochi\Shop\Infrastructure\Eloquents;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;

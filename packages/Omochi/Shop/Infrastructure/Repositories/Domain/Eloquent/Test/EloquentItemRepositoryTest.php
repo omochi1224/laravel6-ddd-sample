@@ -6,7 +6,7 @@
  * Time: 04:16
  */
 
-namespace Omochi\Shop\Domain\Infrastructure\Repositories\Domain\Eloquent;
+namespace Omochi\Shop\Infrastructure\Repositories\Domain\Eloquent;
 
 use PHPUnit\Framework\TestCase;
 

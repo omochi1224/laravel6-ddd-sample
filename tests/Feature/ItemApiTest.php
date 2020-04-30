@@ -3,7 +3,7 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Omochi\Shop\Domain\Infrastructure\Eloquents\EloquentItem;
+use Omochi\Shop\Infrastructure\Eloquents\EloquentItem;
 use Tests\TestCase;
 
 

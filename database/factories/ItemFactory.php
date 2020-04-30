@@ -4,7 +4,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(\Omochi\Shop\Domain\Infrastructure\Eloquents\EloquentItem::class, function (Faker $faker) {
+$factory->define(\Omochi\Shop\Infrastructure\Eloquents\EloquentItem::class, function (Faker $faker) {
     return [
         'id' => (string)\Illuminate\Support\Str::uuid(),
         'name' => $faker->text,

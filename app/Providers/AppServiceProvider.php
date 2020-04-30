@@ -3,8 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Omochi\Shop\Domain\Infrastructure\Repositories\Domain\Eloquent\EloquentItemRepository;
 use Omochi\Shop\Domain\Models\Item\ItemRepository;
+use Omochi\Shop\Infrastructure\Repositories\Domain\Eloquent\EloquentItemRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
