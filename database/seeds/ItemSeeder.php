@@ -11,7 +11,7 @@ class ItemSeeder extends Seeder
      */
     public function run()
     {
-        factory(\Omochi\Shop\Domain\Infrastructure\Eloquents\EloquentItem::class, 50)->create();
+        factory(\Omochi\Shop\Infrastructure\Eloquents\EloquentItem::class, 50)->create();
     }
 
 }
