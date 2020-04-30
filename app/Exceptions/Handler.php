@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Omochi\Shop\Domain\Exceptions\NotFoundException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -50,6 +51,23 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+        $response['status'] = 'NG';
+        $response['summary'] = '';
+        $response['errors'] = '';
+
+        //postでのエラー処理
+        if ($exception instanceof CreateException) {
+            $response['summary'] = 'Resources create error';
+            $response['errors'] = '新規登録エラー';
+            return response()->json($response, $exception->getCode());
+        }
+
+        if ($exception instanceof NotFoundException) {
+            $response['summary'] = 'Resources Not found';
+            $response['errors'] = 'Not found';
+            return response()->json($response, 404);
+        }
+
         return parent::render($request, $exception);
     }
 }

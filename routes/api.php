@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Omochi\Shop\Application\Controller\ItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+$router->post('/item', ItemController::class . '@store')->name('item.store');
+$router->get('/item/{id}', ItemController::class . '@get')->name('item.get');
+$router->put('/item/{id}', ItemController::class . '@update')->name('item.update');
+$router->delete('/item/{id}', ItemController::class . '@delete')->name('item.delete');

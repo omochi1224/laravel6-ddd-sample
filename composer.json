@@ -38,11 +38,13 @@
         },
         "classmap": [
             "database/seeds",
-            "database/factories"
+            "database/factories",
+            "packages"
         ]
     },
     "autoload-dev": {
         "psr-4": {
+            "Omochi\\": "packages/Omochi",
             "Tests\\": "tests/"
         }
     },
